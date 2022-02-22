@@ -67,7 +67,6 @@ let currentOperator = '';
 
 numberArea.addEventListener('change', function(){
   currentNum = parseInt(numberArea.value);
-  console.log(currentNum);
 })
 
 // assign number buttons with equivalent functions
@@ -82,28 +81,24 @@ btn_add.addEventListener('click', function(){
   previousNum = currentNum;
   currentOperator = '+';
   numberArea.value = '';
-  console.log(`current num ${currentNum} | previous num ${previousNum} | current operator ${currentOperator}`);
 });
 
 btn_sub.addEventListener('click', function(){
   previousNum = currentNum;
   currentOperator = '-';
   numberArea.value = '';
-  console.log(`current num ${currentNum} | previous num ${previousNum} | current operator ${currentOperator}`);
 });
 
 btn_mult.addEventListener('click', function(){
   previousNum = currentNum;
   currentOperator = '*';
   numberArea.value = '';
-  console.log(`current num ${currentNum} | previous num ${previousNum} | current operator ${currentOperator}`);
 });
 
 btn_div.addEventListener('click', function(){
   previousNum = currentNum;
   currentOperator = '/';
   numberArea.value = '';
-  console.log(`current num ${currentNum} | previous num ${previousNum} | current operator ${currentOperator}`);
 });
 
 btn_equal.addEventListener('click', function(){
@@ -117,17 +112,5 @@ btn_clear.addEventListener('click', function(){
   currentNum = NaN;
   previousNum = NaN;
   currentOperator = '';
-  console.log(currentNum);
 });
-
-// testing
-console.log(add(5, 5));
-console.log(subtract(10, 7));
-console.log(multiply(5, 5));
-console.log(divide(25, 5));
-
-console.log(operate('+', 1, 2));
-console.log(operate('/', 99, 3));
-console.log(operate('*', 6, 78));
-console.log(operate('-', 1000, 1));
 
